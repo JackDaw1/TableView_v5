@@ -60,5 +60,14 @@ class TaskViewController: UIViewController, UITableViewDataSource, UITableViewDe
             return 100
         }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let task = task[indexPath.row]
+    let detailVC = DetailViewController()
+    detailVC.task = task
+    self.navigationController?.present(detailVC, animated: true)
+           }
+
+
+    
 }
 

@@ -9,15 +9,15 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    var task: Task?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .red
-        /*
-        let detailVC = DetailViewController()
-        detailVC.task = task
-        self.navigationController.present(detailVC, animated: true)
-         */
+                
+        
+         
     }
 
 }
