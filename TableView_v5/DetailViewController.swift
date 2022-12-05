@@ -13,6 +13,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .red
+        /*
+        let detailVC = DetailViewController()
+        detailVC.task = task
+        self.navigationController.present(detailVC, animated: true)
+         */
     }
 
 }
