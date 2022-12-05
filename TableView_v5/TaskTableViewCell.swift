@@ -74,7 +74,7 @@ class TaskTableViewCell: UITableViewCell {
         label.font = UIFont.boldSystemFont(ofSize: 14)
         label.textColor =  .white
         label.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
-        label.layer.cornerRadius = 5
+        label.layer.cornerRadius = 10
         label.clipsToBounds = true
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -105,10 +105,13 @@ class TaskTableViewCell: UITableViewCell {
             
         customerDetailedLabel.topAnchor.constraint(equalTo:self.nameOfArticleLabel.bottomAnchor).isActive = true
         customerDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
+        /*
         customerDetailedLabel.topAnchor.constraint(equalTo:self.nameOfArticleLabel.bottomAnchor).isActive = true
         customerDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
+        */
         
-            
+        priceDetailedLabel.topAnchor.constraint(equalTo:self.customerDetailedLabel.bottomAnchor).isActive = true
+        priceDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
             
         }
         
