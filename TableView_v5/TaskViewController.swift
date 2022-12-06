@@ -61,10 +61,11 @@ class TaskViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let task = task[indexPath.row]
-    let detailVC = DetailViewController()
-    detailVC.task = task
-    self.navigationController?.present(detailVC, animated: true)
+        //let task = task[indexPath.row]
+         let task = task[indexPath.row]
+        let detailVC = DetailViewController()
+        detailVC.task = task
+        self.navigationController?.pushViewController(detailVC, animated: true)
            }
 
 
