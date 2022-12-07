@@ -59,12 +59,14 @@ class DetailViewController: UIViewController {
         containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
+        priceDetailedLabel.heightAnchor.constraint(equalToConstant:40).isActive = true
         priceDetailedLabel.topAnchor.constraint(equalTo:self.containerView.topAnchor).isActive = true
         priceDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
         priceDetailedLabel.trailingAnchor.constraint(equalTo:self.containerView.trailingAnchor).isActive = true
             
         draftLabel.topAnchor.constraint(equalTo:self.priceDetailedLabel.bottomAnchor).isActive = true
         draftLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
+        draftLabel.trailingAnchor.constraint(equalTo:self.containerView.trailingAnchor).isActive = true
       
     }
 
