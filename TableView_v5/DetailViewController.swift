@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
 
     let containerView:UIView = {
            let view = UIView()
-           view.translatesAutoresizingMaskIntoConstraints = true
+           view.translatesAutoresizingMaskIntoConstraints = false
            view.clipsToBounds = true // this will make sure its children do not go out of the boundary
            return view
        }()
@@ -30,6 +30,8 @@ class DetailViewController: UIViewController {
     
     let priceDetailedLabel:UILabel = {
         let label = UILabel()
+        //self.translatesAutoresizingMaskIntoConstraints = false
+
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
@@ -55,6 +57,7 @@ class DetailViewController: UIViewController {
         priceDetailedLabel.widthAnchor.constraint(equalToConstant:30).isActive = true
         priceDetailedLabel.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
         priceDetailedLabel.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        priceDetailedLabel.translatesAutoresizingMaskIntoConstraints = false
             
        
       
