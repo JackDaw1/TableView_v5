@@ -48,13 +48,13 @@ class DetailViewController: UIViewController {
         
         view.addSubview(containerView)
 
-        containerView.heightAnchor.constraint(equalToConstant:40).isActive = true
-        containerView.widthAnchor.constraint(equalToConstant:40).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant:100).isActive = true
+        containerView.widthAnchor.constraint(equalToConstant:100).isActive = true
         containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
-        priceDetailedLabel.heightAnchor.constraint(equalToConstant:30).isActive = true
-        priceDetailedLabel.widthAnchor.constraint(equalToConstant:30).isActive = true
+        priceDetailedLabel.heightAnchor.constraint(equalToConstant:90).isActive = true
+        priceDetailedLabel.widthAnchor.constraint(equalToConstant:90).isActive = true
         priceDetailedLabel.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
         priceDetailedLabel.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
         priceDetailedLabel.translatesAutoresizingMaskIntoConstraints = false
