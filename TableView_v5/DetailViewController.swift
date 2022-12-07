@@ -34,11 +34,7 @@ class DetailViewController: UIViewController {
         return label
     }()
     
-    let draftLabel:UILabel = {
-        let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 20)
-        return label
-    }()
+   
     
     
     override func viewDidLoad() {
@@ -46,27 +42,21 @@ class DetailViewController: UIViewController {
         
         view.backgroundColor = .green
         
-        draftLabel.text = " 111111111 "
-        
-        containerView.addSubview(draftLabel)
         containerView.addSubview(priceDetailedLabel)
         
         view.addSubview(containerView)
 
-        
         containerView.heightAnchor.constraint(equalToConstant:40).isActive = true
-        containerView.widthAnchor.constraint(equalToConstant:70).isActive = true
+        containerView.widthAnchor.constraint(equalToConstant:40).isActive = true
         containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
-        priceDetailedLabel.heightAnchor.constraint(equalToConstant:40).isActive = true
-        priceDetailedLabel.topAnchor.constraint(equalTo:self.containerView.topAnchor).isActive = true
-        priceDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
-        priceDetailedLabel.trailingAnchor.constraint(equalTo:self.containerView.trailingAnchor).isActive = true
+        priceDetailedLabel.heightAnchor.constraint(equalToConstant:30).isActive = true
+        priceDetailedLabel.widthAnchor.constraint(equalToConstant:30).isActive = true
+        priceDetailedLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        priceDetailedLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
             
-        draftLabel.topAnchor.constraint(equalTo:self.priceDetailedLabel.bottomAnchor).isActive = true
-        draftLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
-        draftLabel.trailingAnchor.constraint(equalTo:self.containerView.trailingAnchor).isActive = true
+       
       
     }
 
