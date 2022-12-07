@@ -13,7 +13,10 @@ class DetailViewController: UIViewController {
             didSet {
                 guard let taskItem = task else {return}
                 if let price = taskItem.price {
-                    priceDetailedLabel.text = " Price: \(price) "
+                    priceDetailedLabel.text = "Price: \(price)"
+                }
+                if let numberOfSigns = taskItem.numberOfSigns {
+                    numberOfSignsLabel.text = "Number of signs: \(numberOfSigns)"
                 }
             }
         }
@@ -36,6 +39,14 @@ class DetailViewController: UIViewController {
         return label
     }()
     
+    let numberOfSignsLabel:UILabel = {
+        let label = UILabel()
+        //self.translatesAutoresizingMaskIntoConstraints = false
+
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        return label
+    }()
+    
    
     
     
@@ -45,19 +56,27 @@ class DetailViewController: UIViewController {
         view.backgroundColor = .white
         
         containerView.addSubview(priceDetailedLabel)
-        
+        containerView.addSubview(numberOfSignsLabel)
+
         view.addSubview(containerView)
 
-        containerView.heightAnchor.constraint(equalToConstant:100).isActive = true
-        containerView.widthAnchor.constraint(equalToConstant:200).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant:400).isActive = true
+        containerView.widthAnchor.constraint(equalToConstant:600).isActive = true
         containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
-        priceDetailedLabel.heightAnchor.constraint(equalToConstant:90).isActive = true
+        priceDetailedLabel.heightAnchor.constraint(equalToConstant:150).isActive = true
         priceDetailedLabel.widthAnchor.constraint(equalToConstant:190).isActive = true
         priceDetailedLabel.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
-        priceDetailedLabel.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+        //priceDetailedLabel.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
         priceDetailedLabel.translatesAutoresizingMaskIntoConstraints = false
+            
+        
+        numberOfSignsLabel.heightAnchor.constraint(equalToConstant:190).isActive = true
+        numberOfSignsLabel.widthAnchor.constraint(equalToConstant:400).isActive = true
+        numberOfSignsLabel.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
+        numberOfSignsLabel.topAnchor.constraint(equalTo:self.priceDetailedLabel.bottomAnchor).isActive = true
+        numberOfSignsLabel.translatesAutoresizingMaskIntoConstraints = false
             
        
       

@@ -11,4 +11,5 @@ struct Task {
     let nameOfArticle:String?
     let customer:String?
     let price:Int?
+    let numberOfSigns: Int?
 }

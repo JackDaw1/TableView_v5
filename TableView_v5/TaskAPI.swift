@@ -12,8 +12,8 @@ import Foundation
 class TaskAPI {
     static func getTask() -> [Task]{
         let task = [
-            Task(nameOfArticle: "SQL Tutorial", customer: "proglib", price: 100),
-            Task(nameOfArticle: "iOS Tutorial", customer: "habr", price: 200),
+            Task(nameOfArticle: "SQL Tutorial", customer: "proglib", price: 100, numberOfSigns: 1500),
+            Task(nameOfArticle: "iOS Tutorial", customer: "habr", price: 200, numberOfSigns: 1500),
         ]
         return task
     }
