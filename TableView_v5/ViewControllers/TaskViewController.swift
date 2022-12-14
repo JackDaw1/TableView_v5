@@ -8,9 +8,6 @@
 import UIKit
 
 class TaskViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    
-
     private let task = TaskAPI.getTask() // model
     let taskTableView = UITableView() // view
     
@@ -67,7 +64,7 @@ class TaskViewController: UIViewController, UITableViewDataSource, UITableViewDe
         detailVC.task = task
         self.navigationController?.pushViewController(detailVC, animated: true)
            }
-
+     
 
     
 }
