@@ -14,7 +14,7 @@ import UIKit
 
 class TaskTableViewCell: UITableViewCell {
 
-    var task:Task? {
+    var task:TaskDTO? {
             didSet {
                 guard let taskItem = task else {return}
                 if let nameOfArticle = taskItem.nameOfArticle {

@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
         
-    var task:Task? {
+    var task:TaskDTO? {
             didSet {
                 guard let taskItem = task else {return}
                 if let price = taskItem.price {

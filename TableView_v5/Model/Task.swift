@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Task {
+struct TaskDTO : Codable {
     let nameOfArticle:String?
     let customer:String?
     let price:Int?

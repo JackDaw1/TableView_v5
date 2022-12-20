@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6C76D8B53C0BFF9460ABB73B /* libPods-TableView_v5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 179D1FE2739E47891A7B016C /* libPods-TableView_v5.a */; };
+		FE9A1DF62950D410005A48AA /* MoyaNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A1DF12950D410005A48AA /* MoyaNetworkManager.swift */; };
+		FE9A1DF72950D410005A48AA /* TaskDTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A1DF22950D410005A48AA /* TaskDTOModel.swift */; };
+		FE9A1DF82950D410005A48AA /* MoyaRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A1DF32950D410005A48AA /* MoyaRequestType.swift */; };
+		FE9A1DF92950D410005A48AA /* MoyaRequestType+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A1DF42950D410005A48AA /* MoyaRequestType+TestData.swift */; };
+		FE9A1DFA2950D410005A48AA /* ResponseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A1DF52950D410005A48AA /* ResponseAPI.swift */; };
 		FE9B5EA6293DDB5C003F8807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B5EA5293DDB5C003F8807 /* AppDelegate.swift */; };
 		FE9B5EA8293DDB5C003F8807 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B5EA7293DDB5C003F8807 /* SceneDelegate.swift */; };
 		FE9B5EAF293DDB5D003F8807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9B5EAE293DDB5D003F8807 /* Assets.xcassets */; };
@@ -23,6 +28,11 @@
 		179D1FE2739E47891A7B016C /* libPods-TableView_v5.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TableView_v5.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD073F5BE1B6781A524B3E /* Pods-TableView_v5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView_v5.release.xcconfig"; path = "Target Support Files/Pods-TableView_v5/Pods-TableView_v5.release.xcconfig"; sourceTree = "<group>"; };
 		D6D78ABF84DD8883F4F9CF65 /* Pods-TableView_v5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView_v5.debug.xcconfig"; path = "Target Support Files/Pods-TableView_v5/Pods-TableView_v5.debug.xcconfig"; sourceTree = "<group>"; };
+		FE9A1DF12950D410005A48AA /* MoyaNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaNetworkManager.swift; path = "../../../../../Downloads/Network 3/MoyaNetworkManager.swift"; sourceTree = "<group>"; };
+		FE9A1DF22950D410005A48AA /* TaskDTOModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskDTOModel.swift; path = "../../../../../Downloads/Network 3/TaskDTOModel.swift"; sourceTree = "<group>"; };
+		FE9A1DF32950D410005A48AA /* MoyaRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaRequestType.swift; path = "../../../../../Downloads/Network 3/MoyaRequestType.swift"; sourceTree = "<group>"; };
+		FE9A1DF42950D410005A48AA /* MoyaRequestType+TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MoyaRequestType+TestData.swift"; path = "../../../../../Downloads/Network 3/MoyaRequestType+TestData.swift"; sourceTree = "<group>"; };
+		FE9A1DF52950D410005A48AA /* ResponseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseAPI.swift; path = "../../../../../Downloads/Network 3/ResponseAPI.swift"; sourceTree = "<group>"; };
 		FE9B5EA2293DDB5C003F8807 /* TableView_v5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView_v5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9B5EA5293DDB5C003F8807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE9B5EA7293DDB5C003F8807 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +64,6 @@
 				D6D78ABF84DD8883F4F9CF65 /* Pods-TableView_v5.debug.xcconfig */,
 				54FD073F5BE1B6781A524B3E /* Pods-TableView_v5.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -99,6 +108,18 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FE9A1DE22950D2F8005A48AA /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				FE9A1DF12950D410005A48AA /* MoyaNetworkManager.swift */,
+				FE9A1DF32950D410005A48AA /* MoyaRequestType.swift */,
+				FE9A1DF42950D410005A48AA /* MoyaRequestType+TestData.swift */,
+				FE9A1DF52950D410005A48AA /* ResponseAPI.swift */,
+				FE9A1DF22950D410005A48AA /* TaskDTOModel.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
 		FE9B5E99293DDB5C003F8807 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +141,7 @@
 		FE9B5EA4293DDB5C003F8807 /* TableView_v5 */ = {
 			isa = PBXGroup;
 			children = (
+				FE9A1DE22950D2F8005A48AA /* Moya */,
 				FE77E017294999A100BFF359 /* View */,
 				FE77E0162949993600BFF359 /* ViewModel */,
 				FE77E0152949992600BFF359 /* Model */,
@@ -230,11 +252,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE9B5EBC293DE6B1003F8807 /* Task.swift in Sources */,
+				FE9A1DF92950D410005A48AA /* MoyaRequestType+TestData.swift in Sources */,
 				FE9B5EA6293DDB5C003F8807 /* AppDelegate.swift in Sources */,
 				FE9B5EA8293DDB5C003F8807 /* SceneDelegate.swift in Sources */,
 				FE9B5EC2293DE8C4003F8807 /* TaskTableViewCell.swift in Sources */,
 				FE9B5EBA293DDF62003F8807 /* TaskViewController.swift in Sources */,
+				FE9A1DF82950D410005A48AA /* MoyaRequestType.swift in Sources */,
+				FE9A1DF72950D410005A48AA /* TaskDTOModel.swift in Sources */,
 				FE9B5EBE293DE6BF003F8807 /* TaskAPI.swift in Sources */,
+				FE9A1DFA2950D410005A48AA /* ResponseAPI.swift in Sources */,
+				FE9A1DF62950D410005A48AA /* MoyaNetworkManager.swift in Sources */,
 				FE9B5EC4293DF0DC003F8807 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
